@@ -44,18 +44,47 @@ table {
 }
 /*END CSS Reset****************************************************/
 
-/*COLOR SCHEME*******************************************
+/*COLOR SCHEME and FONT INFO****************************************
     Dark gray: #0D0D0D;
     Off-white: #F2F2F2;
     Dark teal: #7ABFBF;
     Light teal: rgba(122, 191, 191, .5);
     Orange-red: #EB5428;
+
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weights...
+        Bold: 700
+        Regular: 400
 **/
 
 /*GLOBAL SELECTORS********************************************/
 html {
     box-sizing: border-box;
+    background-color: rgba(122, 191, 191, .5);
 }
 *, *:before, *:after {
     box-sizing: inherit;
+}
+body {
+    width: 414px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+}
+
+/*ARTICLE******************************************************/
+
+
+/*SIDE DISHES**************************************************/
+
+
+/*MEDIA QUERIES************************************************/
+@media screen and (min-width:768px) {
+    
+
+}
+
+@media screen and (min-width:1280px) {
+    
+
 }
