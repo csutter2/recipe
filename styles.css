@@ -208,6 +208,8 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         display: none;
     }
     /*Hamburger Menu****************/
+
+    /*Need to control nav img sizes when get to this width--try layout and if can't control that way, then change their width % here*/
 }
 
 @media screen and (min-width:1280px) {
