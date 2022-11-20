@@ -41,7 +41,7 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
+}  
 /*END CSS Reset****************************************************/
 
 /*COLOR SCHEME and FONT INFO****************************************
@@ -83,23 +83,43 @@ h1, h2, h3 {
 }
 h2 {
     font-size: 30px;
+    text-align: center;
+    padding: 20px 10px;
 }
 h3 {
     font-size: 25px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
-#menu li, #social li {
-    font-size: 20px;
-    font-family: 'Bebas Neue', cursive;
+dl {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: start;
+    line-height: 1.5;
 }
 p, dd {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    line-height: 1.5;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 dt {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    margin-left: 10px;
+}
+dd:nth-child(8) {
+    position: relative;
+    left: -25px;
+}
+dd:nth-child(10) {
+    position: relative;
+    left: -10px;
 }
 li {
     font-size: 16px;
@@ -109,6 +129,7 @@ li {
 figcaption {
     font-size: 20px;
     font-family: 'Bebas Neue', cursive;
+    margin-left: 10px;
 }
 nav {
     font-size: 16px;
@@ -124,7 +145,29 @@ input {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
+#search_bar label, #search_bar input {
+    border: 3px solid #EB5428;
+    width: 300px;
+    height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#search_bar button {
+    position: relative;
+    top: -6px;
+    left: -4px;
+    height: 50px;
+    background-color: #EB5428;
+    border: 2px solid #EB5428;
+}
+#search_bar button svg {
+    stroke: #FFF;
+}
 footer {
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+#social li {
     font-size: 20px;
     font-family: 'Bebas Neue', cursive;
 }
@@ -132,12 +175,79 @@ footer img {
     width: 40%;
 }
 /*ARTICLE: STREET TACOS*****************************************/
-article img {
+menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+menu li {
+    display: inline-block;
+}
+menu button {
+    border: none;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-flow: column-reverse;
+    text-align: center;
+}
+menu button svg {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.buttons {
+    color: #EB5428;
+    display: block;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+#street_tacos img {
     width: 100%;
 }
-
+#street_tacos p:first-of-type {
+    margin-top: 10px;
+}
+.clearfix {
+    content: “”;
+	display: table;
+	clear: both;
+}
+#street_tacos ul {
+    list-style-type: square;
+}
+#street_tacos ul li {
+    margin-left: 20px;
+    line-height: 1.7;
+    padding-left: 10px;
+}
+#street_tacos ol {
+    list-style-type: decimal;
+}
+#street_tacos ol li {
+    margin-left: 25px;
+    margin-right: 5px;
+    line-height: 1.7;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
 /*SIDE DISHES**************************************************/
-
+#side_dishes {
+    background-color: #7ABFBF;
+}
+/*Styling ratings' stars***************/
+#side_dishes svg {
+    fill: #EB5428;
+}
+#side_dishes section svg:last-of-type {
+    fill: #ffffff;
+}
+#side_dishes section:nth-child(3) svg {
+    fill: #EB5428;
+}
+#side_dishes section svg:first-of-type {
+    margin-left: 10px;
+}
 
 /*HAMBURGER MENU FOR MOBILE DESIGN*****************************/
 ul {
