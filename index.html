@@ -8,9 +8,11 @@
         <meta name="description" content="Good Eats provides delicious recipe ideas, such as these street tacos and their complementary side dishes!">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">  
         <link rel="stylesheet" href="styles.css">
         <title>Good Eats | Street Tacos</title>
+        <!--Adds HTML 5 element support for earlier versions of IE-->
+		<!--[if lt IE 9]> <script>Then follow this immediately with javascript code</script><![end if]-->
     </head>
 
     <body>
@@ -18,7 +20,7 @@
             <h1>Good Eats- Street Tacos</h1>
         </header>
 
-        <article>
+        <article id="street_tacos">
             <h2>Street Tacos</h2>
             <ul id="menu">
                 <li>Save  (save svg)</li>
@@ -104,6 +106,8 @@
 
         <nav>
             <h2>Main Navigation (hamburger svg)</h2>
+            <input type="checkbox" name="hamburger_menu" id="hamburger_menu">
+			<label for="hamburger_menu"><span class="steps"></span></label>
             <ul>
                 <li><a>Home (logo svg)</a></li>
                 <li><a>Breakfast<img src="breakfast.png" alt="Fried eggs cooking in pan, next to slice of bread and glass of orange juice"></a></li>
@@ -127,7 +131,7 @@
             <h2>Connect</h2>
 
             <h3>Social Media Links</h3>
-            <ul>
+            <ul id="social">
                 <li><a>Facebook (facebook svg)</a></li>
                 <li><a>Instagram (instagram svg)</a></li>
                 <li><a>YouTube (youtube svg)</a></li>
@@ -136,7 +140,7 @@
 
             <h3>Good Eats</h3>
             <small>Copyright 2022<br>
-            Taco Cheesington</small>
+            Taco Cheesington</small><br>
             <img src="Taco-cheesington.png" alt="Person in apron with tattooed arms, decoratively plating a meal with meat in a pool of gravy and topped delicately with vegetables"> (taco-chessington svg)
         </footer>
     </body>
