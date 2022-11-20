@@ -202,7 +202,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         position: absolute;
         top: 0;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     label span, input {
         display: none;
