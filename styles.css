@@ -135,6 +135,7 @@ figcaption {
     margin-left: 10px;
     text-transform: initial;/*should be initial but style isn't taking; fix*/
 }
+/*Put the nav stuff all together in the nav section below*/
 nav {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
@@ -152,11 +153,23 @@ nav ul img, nav ul svg {
 }
 nav a {
     text-decoration: none;
+    padding-left: 25px;
+    padding-right: 57px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 0;
+}
+nav a:hover {
+    background-color: #EB5428;
+}
+#menu_a {
+    background-color: #F2F2F2;
 }
 nav a, nav span {
     font-size: 20px;
     font-family: 'Bebas Neue', cursive;
 }
+/*nav stuff seems to end here*/
 .hidden {
     display: none;
 }
@@ -326,7 +339,7 @@ nav label {
 nav label span {
     background-color: #ffffff;
     display: block;
-    height: 2px;
+    /* height: 2px; *//*commented this out to make the hamburger lines disappear*/
     position: relative;
     transition: background-color .2s ease-out;
     width: 18px;
@@ -350,7 +363,7 @@ nav input {
     display: none;
 }
 nav input:checked ~ ul {
-    max-height: 500px;
+    max-height: 600px;
 }
 nav input:checked ~ label span {
     background: transparent;
@@ -368,17 +381,30 @@ nav input:checked ~ label:not(.steps) span:before, nav input:checked ~ label:not
 .menu_links {
     color: #000;
 }
+/*putting space above BREAKFAST in nav bar and repositioning slightly*/
+nav li:nth-child(2) {
+    margin-top: 25px;
+    margin-left: -87px;
+}
+/*making menu items vertically stacked*/
+nav a {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 20px; */
+    margin-bottom: 5px;
+}
 /*menu label*/
 nav li:first-child span {
     position: absolute;
     top: 50px;
-    padding-left: 27px;
+    margin-left: 3px;
 }
 /*sign-in label*/
 nav li:last-child span {
     position: absolute;
     top: 52px;
-    padding-left: 25px;
+    padding-left: 0px;
+    margin-left: -15px;
 }
 /*hamburger svg*/
 nav h2 {
@@ -386,12 +412,12 @@ nav h2 {
     position: absolute;
     top: 0;
     margin-top: 10px;
-    margin-left: 35px;
+    margin-left: 39px;
 }
 nav h2 svg {
     position: absolute;
     top: 0;
-    margin-left: -33px;
+    margin-left: -35px;
 }
 /*utensils svg*/
 nav li:first-child svg {
@@ -399,7 +425,7 @@ nav li:first-child svg {
     width: 227px;
     position: absolute;
     top: 0;
-    margin-left: 91px;
+    margin-left: 62px;
     margin-right: 59px;
     height: 81px;
 }
@@ -408,7 +434,7 @@ nav li:last-child svg {
     stroke: #EB5428;
     width: 44px;
     margin-top: 10px;
-    margin-left: 36px;
+    margin-left: -3px;
     position: absolute;
     top: 0;
 }
@@ -441,6 +467,10 @@ nav li:last-child svg {
 #search_bar button svg {
     stroke: #FFF;
 }
+/*if you change ur mind and want to bold the placeholder, looks too thick to me right now*/
+/* #search_bar [placeholder] {
+    font-weight: bold;
+} */
 
 /*MEDIA QUERIES************************************************/
 @media screen and (min-width:768px) {
