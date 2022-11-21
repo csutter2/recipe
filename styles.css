@@ -71,6 +71,8 @@ body {
     max-width: 80%;
     margin: 0 auto;
     background-color: #F2F2F2;
+    display: flex;/*new!!!*/
+    flex-direction: column;
 }
 header {
     display: none;
@@ -136,9 +138,19 @@ nav {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    position: absolute;
+    order: -2;
+    /* position: absolute;
     top: -10px;
-    left: -50px;
+    left: -50px; */
+}
+nav li {
+    display: inline-block;
+}
+nav ul img, nav ul svg {
+    width: 20%;
+}
+nav a {
+    text-decoration: none;
 }
 nav a, nav span {
     font-size: 20px;
@@ -174,6 +186,7 @@ footer small {
 #social {
     margin-left: 30px;
     margin-top: 50px;
+    margin-bottom: 5px;
 }
 #social li {
     font-size: 20px;
@@ -355,9 +368,10 @@ nav input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.st
 }
 /*SEARCH_BAR SECTION********************************************/
 #search_bar {
+    order: -1;
     display: flex;
-    position: absolute;
-    top: 120px;
+    /* position: absolute;
+    top: 120px; */
     height: 50px;
     width: 300px;
     margin-left: 50px;
@@ -365,9 +379,13 @@ nav input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.st
 #search_bar h2 {
     display: none;
 }
-#search_bar label, #search_bar input {
+#search_bar label {
+    height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#search_bar input {
     border: 3px solid #EB5428;
-    /* width: 300px; */
     height: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
