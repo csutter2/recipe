@@ -368,50 +368,49 @@ nav input:checked ~ label:not(.steps) span:before, nav input:checked ~ label:not
 .menu_links {
     color: #000;
 }
+/*menu label*/
 nav li:first-child span {
     position: absolute;
     top: 50px;
-    left: 43px;
+    padding-left: 27px;
 }
+/*sign-in label*/
 nav li:last-child span {
     position: absolute;
-    top: 50px;
-    right: 35px;
+    top: 52px;
+    padding-left: 25px;
 }
 /*hamburger svg*/
 nav h2 {
-    width: 50%;
+    width: 45px;
     position: absolute;
-    left: 0;
     top: 0;
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 35px;
 }
 nav h2 svg {
     position: absolute;
     top: 0;
-    left: 0;
-    margin-left: 10px;
+    margin-left: -33px;
 }
 /*utensils svg*/
 nav li:first-child svg {
     background-color: #EB5428;
-    width: 50%;
+    width: 227px;
     position: absolute;
     top: 0;
-    margin-left: 20%;
-    margin-right: 13%;
+    margin-left: 91px;
+    margin-right: 59px;
     height: 81px;
 }
 /*avatar svg*/
 nav li:last-child svg {
     stroke: #EB5428;
-    width: 40%;
+    width: 44px;
     margin-top: 10px;
-    margin-right: -25px;
+    margin-left: 36px;
     position: absolute;
     top: 0;
-    right: 0;
 }
 /*SEARCH_BAR SECTION********************************************/
 #search_bar {
