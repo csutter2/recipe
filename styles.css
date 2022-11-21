@@ -67,11 +67,12 @@ html {
     box-sizing: inherit;
 }
 body {
-    min-width: 414px;
-    max-width: 80%;
+    width: 414px;
+    /* min-width: 414px;
+    max-width: 80%; */
     margin: 0 auto;
     background-color: #F2F2F2;
-    display: flex;/*new!!!*/
+    display: flex;
     flex-direction: column;
 }
 header {
@@ -139,9 +140,9 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     order: -2;
-    /* position: absolute;
-    top: -10px;
-    left: -50px; */
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, .25);
 }
 nav li {
     display: inline-block;
@@ -226,11 +227,7 @@ menu button {
     background-color: #F2F2F2;
     display: flex;
     flex-flow: column-reverse;
-    text-align: center;
-}
-menu button svg {
-    margin-left: 25px;
-    margin-right: 25px;
+    align-items: center;
 }
 .buttons {
     color: #EB5428;
@@ -313,6 +310,7 @@ menu button svg {
 }
 
 /*HAMBURGER MENU FOR MOBILE DESIGN***********************added nav before all selectors******/
+/*Code from before by CC*/
 nav ul {
     overflow: hidden;
     max-height: 0;
@@ -363,18 +361,65 @@ nav input:checked ~ label span:before {
 nav input:checked ~ label span:after {
     transform: rotate(45deg);
 }
-nav input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+nav input:checked ~ label:not(.steps) span:before, nav input:checked ~ label:not(.steps) span:after {
     top: 0;
+}
+/*My additions********************/
+.menu_links {
+    color: #000;
+}
+nav li:first-child span {
+    position: absolute;
+    top: 50px;
+    left: 43px;
+}
+nav li:last-child span {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+}
+/*hamburger svg*/
+nav h2 {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+nav h2 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+}
+/*utensils svg*/
+nav li:first-child svg {
+    background-color: #EB5428;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    margin-left: 20%;
+    margin-right: 13%;
+    height: 81px;
+}
+/*avatar svg*/
+nav li:last-child svg {
+    stroke: #EB5428;
+    width: 40%;
+    margin-top: 10px;
+    margin-right: -25px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 /*SEARCH_BAR SECTION********************************************/
 #search_bar {
     order: -1;
     display: flex;
-    /* position: absolute;
-    top: 120px; */
     height: 50px;
     width: 300px;
-    margin-left: 50px;
+    align-self: center;
 }
 #search_bar h2 {
     display: none;
@@ -400,6 +445,9 @@ nav input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.st
 
 /*MEDIA QUERIES************************************************/
 @media screen and (min-width:768px) {
+    body {
+        width: 768px;
+    }
     /*Hamburger Menu****************/
     nav ul {
         overflow: visible;
@@ -418,7 +466,7 @@ nav input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.st
 
 @media screen and (min-width:1280px) {
     body {
-        max-width: 85%;
+        width: 1280px;
     }
     article img {
         width: 40%;/*might leave this out and instead change size via layout*/
