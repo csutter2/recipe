@@ -141,8 +141,8 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     order: -2;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+    margin-bottom: 30px;/*original was 30px*/
+    padding-bottom: 0px;/*original was 20px*/
     box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, .25);
 }
 nav li {
@@ -154,7 +154,7 @@ nav ul img, nav ul svg {
 nav a {
     text-decoration: none;
     padding-left: 25px;
-    padding-right: 57px;
+    padding-right: 58px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-left: 0;
@@ -336,14 +336,21 @@ nav ul {
 nav label {
     cursor: pointer;
     display: inline-block;
-    padding: 28px 20px;
+    padding: 28px 20px;/*original 28px 20px;*/
     position: relative;
     user-select: none;
+    width: 89px;/*new*/
+    height: 81px;/*new*/
+    z-index: 20;/*new*/
+}
+nav label:hover {
+    background-color: rgba(235,84,40,.2);
+    border-radius: 35px;
 }
 nav label span {
-    background-color: #ffffff;
+    background-color: #FFF;
     display: block;
-    /* height: 2px; *//*commented this out to make the hamburger lines disappear*/
+    /* height: 2px;commented this out to make the hamburger lines disappear */
     position: relative;
     transition: background-color .2s ease-out;
     width: 18px;
@@ -367,7 +374,7 @@ nav input {
     display: none;
 }
 nav input:checked ~ ul {
-    max-height: 600px;
+    max-height: 595px;
 }
 nav input:checked ~ label span {
     background: transparent;
@@ -387,8 +394,8 @@ nav input:checked ~ label:not(.steps) span:before, nav input:checked ~ label:not
 }
 /*putting space above BREAKFAST in nav bar and repositioning slightly*/
 nav li:nth-child(2) {
-    margin-top: 25px;
-    margin-left: -87px;
+    margin-top: 2px;
+    margin-left: -88px;
 }
 /*making menu items vertically stacked*/
 nav a {
@@ -429,9 +436,10 @@ nav li:first-child svg {
     width: 227px;
     position: absolute;
     top: 0;
-    margin-left: 62px;
-    margin-right: 59px;
-    height: 78px;
+    margin-left: 64px;
+    margin-right: 58px;
+    height: 83px;/*new*/
+    z-index: 50;/*new*/
 }
 /*avatar svg*/
 nav li:last-child svg {
@@ -441,6 +449,17 @@ nav li:last-child svg {
     margin-left: -3px;
     position: absolute;
     top: 0;
+}
+nav li:last-child a {
+    margin-left: 0px;
+    position: absolute;
+    top: 0;
+    height: 83px;
+    width: 86px;
+}
+nav li:last-child a:hover {
+    background-color: rgba(235,84,40,.2);
+    border-radius: 90px;
 }
 /*SEARCH_BAR SECTION********************************************/
 #search_bar {
