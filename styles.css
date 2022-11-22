@@ -161,6 +161,7 @@ nav a {
 }
 nav a:hover {
     background-color: #EB5428;
+    transition: all .5s ease-out;
 }
 #menu_a {
     background-color: #F2F2F2;
@@ -218,6 +219,15 @@ footer small {
     margin-left: 25px;
     margin-right: 25px;
 }
+#social span {
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+#social span:hover {
+    background-color: #EB5428;
+    color: #FFF;
+    transition: all .75s ease-out;
+}
 footer h3, footer h2 {
     display: none;
 }
@@ -251,6 +261,13 @@ menu button {
     display: block;
     font-size: 20px;
     font-family: 'Bebas Neue', cursive;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.buttons:hover {
+    background-color: #EB5428;
+    color: #FFF;
+    transition: all .5s ease-out;
 }
 #street_tacos img {
     width: 100%;
@@ -287,6 +304,10 @@ menu button {
 }
 #side_dishes section {
     height: 155px;
+}
+#side_dishes section:hover {
+    background-color: #EB5428;
+    transition: all .5s ease-out;
 }
 #side_dishes h3 {
     text-align: unset;
@@ -336,7 +357,8 @@ nav ul {
 nav label {
     cursor: pointer;
     display: inline-block;
-    padding: 28px 20px;/*original 28px 20px;*/
+    padding: 28px 20px;
+    margin-left: 2px;
     position: relative;
     user-select: none;
     width: 89px;/*new*/
@@ -345,7 +367,8 @@ nav label {
 }
 nav label:hover {
     background-color: rgba(235,84,40,.2);
-    border-radius: 35px;
+    border-radius: 90px;
+    transition: all .5s ease-out;
 }
 nav label span {
     background-color: #FFF;
@@ -436,7 +459,7 @@ nav li:first-child svg {
     width: 227px;
     position: absolute;
     top: 0;
-    margin-left: 64px;
+    margin-left: 69px;
     margin-right: 58px;
     height: 83px;/*new*/
     z-index: 50;/*new*/
@@ -451,7 +474,7 @@ nav li:last-child svg {
     top: 0;
 }
 nav li:last-child a {
-    margin-left: 0px;
+    margin-left: 2px;
     position: absolute;
     top: 0;
     height: 83px;
@@ -460,6 +483,7 @@ nav li:last-child a {
 nav li:last-child a:hover {
     background-color: rgba(235,84,40,.2);
     border-radius: 90px;
+    transition: all .5s ease-out;
 }
 /*SEARCH_BAR SECTION********************************************/
 #search_bar {
@@ -513,7 +537,6 @@ nav li:last-child a:hover {
     }
     /*Hamburger Menu****************/
 
-    /*Need to control nav img sizes when get to this width--try layout and if can't control that way, then change their width % here*/
 }
 
 @media screen and (min-width:1280px) {
