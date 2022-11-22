@@ -183,6 +183,7 @@ footer {
     font-family: 'Bebas Neue', cursive;
     text-align: center;
     padding-bottom: 5px;
+    background-color: #FFF;
 }
 footer img {
     width: 40%;
@@ -225,6 +226,9 @@ footer h3, footer h2 {
 }
 
 /*ARTICLE: STREET TACOS*****************************************/
+/* #street_tacos {
+    background-color: #F2F2F2;
+} */
 menu {
     list-style-type: none;
     display: flex;
@@ -427,7 +431,7 @@ nav li:first-child svg {
     top: 0;
     margin-left: 62px;
     margin-right: 59px;
-    height: 81px;
+    height: 78px;
 }
 /*avatar svg*/
 nav li:last-child svg {
