@@ -135,42 +135,6 @@ figcaption {
     margin-left: 10px;
     text-transform: initial;/*should be initial but style isn't taking; fix*/
 }
-/*Put the nav stuff all together in the nav section below*/
-nav {
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    order: -2;
-    margin-bottom: 30px;/*original was 30px*/
-    padding-bottom: 0px;/*original was 20px*/
-    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, .25);
-}
-nav li {
-    display: inline-block;
-}
-nav ul img, nav ul svg {
-    width: 20%;
-}
-nav a {
-    text-decoration: none;
-    padding-left: 25px;
-    padding-right: 58px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 0;
-}
-nav a:hover {
-    background-color: #EB5428;
-    transition: all .5s ease-out;
-}
-#menu_a {
-    background-color: #F2F2F2;
-}
-nav a, nav span {
-    font-size: 20px;
-    font-family: 'Bebas Neue', cursive;
-}
-/*nav stuff seems to end here*/
 .hidden {
     display: none;
 }
@@ -347,7 +311,7 @@ menu button {
     margin-left: 10px;
 }
 
-/*HAMBURGER MENU FOR MOBILE DESIGN***********************added nav before all selectors******/
+/*MAIN NAVIGATION**************************************************************/
 /*Code from before by CC*/
 nav ul {
     overflow: hidden;
@@ -424,8 +388,13 @@ nav li:nth-child(2) {
 nav a {
     display: flex;
     flex-direction: column;
-    /* margin-left: 20px; */
+    text-decoration: none;
     margin-bottom: 5px;
+    margin-left: 0;
+    padding-left: 25px;
+    padding-right: 58px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 /*menu label*/
 nav li:first-child span {
@@ -485,6 +454,34 @@ nav li:last-child a:hover {
     border-radius: 90px;
     transition: all .5s ease-out;
 }
+/*Reorganize all this code, as the below code is pasted from above*/
+nav {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    order: -2;
+    margin-bottom: 30px;/*original was 30px*/
+    padding-bottom: 0px;/*original was 20px*/
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, .25);
+}
+nav li {
+    display: inline-block;
+}
+nav ul img, nav ul svg {
+    width: 20%;
+}
+nav a:hover {
+    background-color: #EB5428;
+    transition: all .5s ease-out;
+}
+#menu_a {
+    background-color: #F2F2F2;
+}
+nav a, nav span {
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
 /*SEARCH_BAR SECTION********************************************/
 #search_bar {
     order: -1;
@@ -535,9 +532,67 @@ nav li:last-child a:hover {
     nav label span, nav input {
         display: none;
     }
-    /*Hamburger Menu****************/
-
-}
+    /*END Hamburger Menu****************/
+    /*Removing Menu label, hamburger svg and their hover*/
+    nav ul li:first-child span {
+        display: none;
+    }
+    nav h2 svg {
+        display: none;
+    }
+    nav label:hover, nav label {
+        display: none;
+    }
+    /*Repositioning Utensils svg*/
+    nav li:first-child svg {
+        background-color: #EB5428;
+        position: absolute;
+        top: 0;
+        margin-top: -100px;
+        margin-left: -25px;
+        margin-right: 0;
+        width: 95px;
+        height: 90px;new
+        z-index: 50;/*new*/
+    }
+    /*Repositioning avatar and sign-in label, & adjusting hover style*/
+    nav li:last-child svg {
+        stroke: #EB5428;
+        width: 95px;
+        margin-top: -55px;
+        position: absolute;
+        top: 0;
+    }
+    nav li:last-child span {
+        position: absolute;
+        top: 0;
+        margin-top: -16px;
+        margin-left: 10px;
+        width: 90px;
+    }
+    nav li:last-child a {
+        margin-left: 492px;
+        margin-top: -30px;
+        position: absolute;
+        top: 0;
+        height: 83px;
+        width: 86px;
+    }
+    nav li:last-child a:hover {
+        display: none;
+    }
+    #search_bar {
+        order: -60;
+        margin-left: 250px;
+        margin-top: 20px;
+    }
+    nav {
+        position: relative;
+        top: 30px;
+    }
+    nav a {
+        /* width: 60px; */
+    }
 
 @media screen and (min-width:1280px) {
     body {
