@@ -551,8 +551,19 @@ nav a, nav span {
     #side_dishes section {
         height: 135px;
     }
+    #side_dishes section h3 {
+        margin-left: -10px;
+    }
     #side_dishes figure {
         margin-left: -10px;
+    }
+    #side_dishes p {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .stars {
+        left: 170px;
+        top: -127px;
     }
     menu {
         margin-bottom: 0;
@@ -679,6 +690,18 @@ nav a, nav span {
     }
     .menu_links {
         color: #EB5428;
+    }
+    .medium_footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #social {
+        margin-left: 3px;
+        margin-top: -117px;
+        order: 4;
+    }
+    footer div {
+        padding-top: 10px;
     }
 }
 @media screen and (min-width:1280px) {
