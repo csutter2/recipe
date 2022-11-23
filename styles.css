@@ -521,6 +521,15 @@ nav a, nav span {
     body {
         width: 768px;
     }
+    #street_tacos h2 {
+        text-align: left;
+    }
+    menu {
+        background-image: url(street-tacos.png);
+        backdrop-filter: blur(10px);/*CONTINUE HEREneed to REDO this code, because didn't double check how works*/
+    }
+    /*THEN HERE NEED TO REMOVE THE WHITE BACKGROUND FOR SVG AND TEXT*/
+
     /*Hamburger Menu****************/
     nav ul {
         overflow: visible;
@@ -589,11 +598,30 @@ nav a, nav span {
     nav {
         position: relative;
         top: 30px;
+        height: 100px;
+    }
+    nav li:nth-child(2) {
+        margin-top: 2px;
+        margin-left: -80px;
     }
     nav a {
-        /* width: 60px; */
+        flex-flow: column-reverse;
+        align-items: center;
     }
-
+    nav ul {
+        display: flex;
+    }
+    nav ul img {
+        width: 75%;
+        margin-bottom: 5px;
+    }
+    nav li a {
+        padding-right: 0;
+        width: 100px;
+    }
+    .menu_links {
+        color: #EB5428;
+    }
 @media screen and (min-width:1280px) {
     body {
         width: 1280px;
