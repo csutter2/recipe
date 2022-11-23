@@ -330,7 +330,7 @@ nav label {
     z-index: 20;/*new*/
 }
 nav label:hover {
-    background-color: rgba(235,84,40,.2);
+    background-color: rgba(235,84,40,.4);
     border-radius: 90px;
     transition: all .5s ease-out;
 }
@@ -450,7 +450,7 @@ nav li:last-child a {
     width: 86px;
 }
 nav li:last-child a:hover {
-    background-color: rgba(235,84,40,.2);
+    background-color: rgba(235,84,40,.4);
     border-radius: 90px;
     transition: all .5s ease-out;
 }
@@ -523,12 +523,50 @@ nav a, nav span {
     }
     #street_tacos h2 {
         text-align: left;
+        padding-bottom: 30px;
+    }
+    /*Street Taco Details*/
+    #street_tacos dl {
+        justify-content: center;
+        grid-template-columns: 100px 164px;
+        margin-left: 64px;
+    }
+    .medium_screen {
+        display: grid;
+        grid-template-columns: 1.2fr 3fr;
+    }
+    .medium_screen ol {
+        margin-right: 20px;
+    }
+    #side_dishes {
+        display: grid;
+        grid-template-areas:
+        "h2 h2" 
+        "section1 section2" 
+        "section3 section4";
+    }
+    #side_dishes h2 {
+        grid-area: h2;
+    }
+    #side_dishes section {
+        height: 135px;
+    }
+    #side_dishes figure {
+        margin-left: -10px;
     }
     menu {
-        background-image: url(street-tacos.png);
-        backdrop-filter: blur(10px);/*CONTINUE HEREneed to REDO this code, because didn't double check how works*/
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-top: -115px;
+        position: relative;
+        top: 95px;
+        background-color: rgba(249,249,249,0.7);
+        padding-top: 13px;
+        padding-bottom: 15px;
     }
-    /*THEN HERE NEED TO REMOVE THE WHITE BACKGROUND FOR SVG AND TEXT*/
+    menu button {
+        background-color: unset;
+    }
 
     /*Hamburger Menu****************/
     nav ul {
@@ -542,6 +580,7 @@ nav a, nav span {
         display: none;
     }
     /*END Hamburger Menu****************/
+
     /*Removing Menu label, hamburger svg and their hover*/
     nav ul li:first-child span {
         display: none;
@@ -558,38 +597,44 @@ nav a, nav span {
         position: absolute;
         top: 0;
         margin-top: -100px;
-        margin-left: -25px;
+        margin-left: -2px;
         margin-right: 0;
-        width: 95px;
-        height: 90px;new
+        width: 100px;
+        height: 98px;new
         z-index: 50;/*new*/
     }
     /*Repositioning avatar and sign-in label, & adjusting hover style*/
     nav li:last-child svg {
         stroke: #EB5428;
         width: 95px;
-        margin-top: -55px;
         position: absolute;
         top: 0;
+        margin-top: 11px;
+        margin-right: -7px;
     }
     nav li:last-child span {
         position: absolute;
         top: 0;
-        margin-top: -16px;
-        margin-left: 10px;
+        margin-top: 50px;
+        margin-left: 26px;
         width: 90px;
+        color: #000;
     }
     nav li:last-child a {
-        margin-left: 492px;
+        margin-left: -96px;
         margin-top: -30px;
         position: absolute;
-        top: 0;
+        top: -68px;
         height: 83px;
         width: 86px;
     }
     nav li:last-child a:hover {
-        display: none;
+        background-color: rgba(235,84,40,.4);
+        transition: all .5s ease-out;
     }
+    /* nav li:last-child svg:hover {
+        stroke: #FFF;
+    } */
     #search_bar {
         order: -60;
         margin-left: 250px;
@@ -598,7 +643,8 @@ nav a, nav span {
     nav {
         position: relative;
         top: 30px;
-        height: 100px;
+        height: 136px;
+        box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, .25);
     }
     nav li:nth-child(2) {
         margin-top: 2px;
@@ -607,6 +653,14 @@ nav a, nav span {
     nav a {
         flex-flow: column-reverse;
         align-items: center;
+        padding-left: 0;
+        padding-top: 17px;
+        margin-left: 1px;
+        margin-right: 3px;
+    }
+    nav a span:hover {
+        color: #FFF;
+        transition: all .5s ease-out;
     }
     nav ul {
         display: flex;
@@ -615,6 +669,10 @@ nav a, nav span {
         width: 75%;
         margin-bottom: 5px;
     }
+    nav li {
+        display: flex;
+        align-items: start;
+    }
     nav li a {
         padding-right: 0;
         width: 100px;
@@ -622,6 +680,7 @@ nav a, nav span {
     .menu_links {
         color: #EB5428;
     }
+}
 @media screen and (min-width:1280px) {
     body {
         width: 1280px;
