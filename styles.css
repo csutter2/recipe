@@ -520,12 +520,16 @@ nav a, nav span {
 @media screen and (min-width:768px) {
     body {
         width: 768px;
+        background-color: #FFF;
     }
     #street_tacos h2 {
         text-align: left;
         padding-bottom: 30px;
     }
     /*Street Taco Details*/
+    #street_tacos h2 {
+        background-color: #F2F2F2;
+    }
     #street_tacos dl {
         justify-content: center;
         grid-template-columns: 100px 164px;
@@ -687,6 +691,9 @@ nav a, nav span {
     nav li a {
         padding-right: 0;
         width: 100px;
+    }
+    #menu_a {
+        background-color: #FFF;
     }
     .menu_links {
         color: #EB5428;
