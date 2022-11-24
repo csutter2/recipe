@@ -793,7 +793,7 @@ nav a, nav span {
         grid-template-areas:
         "h2     h2    h2    h2" 
         "section1 section2 section3 section4";
-        height: 439px;
+        height: 452px;
     }
     #side_dishes section {
         height: 422px;
@@ -825,7 +825,6 @@ nav a, nav span {
     .stars {
         left: 111px;
         top: -127px;
-      }
     }
     nav {
         top: 5px;
@@ -862,6 +861,23 @@ nav a, nav span {
         margin-left: 1px;
         margin-top: 34px;
     }
-    
+    #social {
+        margin-left: -21px;
+        justify-self: start;
+        margin-top: 29px;
+    }
+    #social li {
+        padding-left: 66px;
+    }
+    footer div {
+        flex-flow: row-reverse;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    footer small {
+        margin-top: 23px;
+        margin-left: -25px;
+      }
+    }
 
 }
