@@ -735,6 +735,97 @@ nav a, nav span {
     #details {
         background-color: #000;
         color: #7ABFBF;
+        height: 119px;
+    }
+    #details h3 {
+        padding-bottom: 20px;
+    }
+    dl {
+        display: grid;
+        grid-template-areas: 
+        "dt1 dt2 dt3 dt4 dt5"
+        "dd1 dd2 dd3 dd4 dd5";
+        margin-left: 101px;
+        grid-row-gap: 0;
+        grid-column-gap: 104px;
+    }
+    dt {
+        width: 145px;
+    }
+    dd {
+        width: 145px;
+    }
+    dl dt:first-child {
+        grid-area: dt1;
+    }
+    dl dt:nth-of-type(2) {
+        grid-area: dt2;
+        margin-left: 35px;
+    }
+    dl dt:nth-of-type(3) {
+        grid-area: dt3;
+    }
+    dl dt:nth-of-type(4) {
+        grid-area: dt4;
+        margin-left: 27px;
+    }
+    dl dt:nth-of-type(5) {
+        grid-area: dt5;
+        margin-left: -5px;
+    }
+    dl dd:first-child {
+        grid-area: dd1;
+    }
+    dl dd:nth-of-type(2) {
+        grid-area: dd2;
+        margin-left: 35px;
+    }
+    dl dd:nth-of-type(3) {
+        grid-area: dd3;
+    }
+    dl dd:nth-of-type(4) {
+        grid-area: dd4;
+    }
+    dl dd:nth-of-type(5) {
+        grid-area: dd5;
+    } 
+    #side_dishes {
+        grid-template-areas:
+        "h2     h2    h2    h2" 
+        "section1 section2 section3 section4";
+        height: 439px;
+    }
+    #side_dishes section {
+        height: 422px;
+        padding-top: 125px;
+    }
+    #side_dishes section h3 {
+        margin-left: -94px;
+        left: 138px;
+        top: 127px;
+    }
+    #side_dishes figure {
+        margin-left: -35px;
+      }
+    #side_dishes img {
+        width: 66%;
+        margin-left: 79px;
+        top: -147px;
+    }
+    #side_dishes p {
+        margin-left: -51px;
+        padding-top: 0;
+        padding-bottom: 7px;
+    }
+    #side_dishes figcaption {
+        margin-left: -49px;
+        top: -100px;
+        left: 130px;
+    }
+    .stars {
+        left: 111px;
+        top: -127px;
+      }
     }
     nav {
         top: 5px;
