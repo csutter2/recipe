@@ -732,6 +732,10 @@ nav a, nav span {
         display: grid;
         grid-template-columns: 1fr 5fr 6fr;
     }
+    #details {
+        background-color: #000;
+        color: #7ABFBF;
+    }
     nav {
         top: 5px;
         background-color: #FFF;
