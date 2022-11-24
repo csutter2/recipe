@@ -719,6 +719,19 @@ nav a, nav span {
     #street_tacos h2 {
         text-align: center;
     }
+    menu {
+        background-color: #FFF;
+        border: 2px solid #EB5428;
+        flex-flow: column;
+        width: 150px;
+        align-items: center;
+        margin-top: -95px;
+        height: 771px;
+    }
+    .large_screen {
+        display: grid;
+        grid-template-columns: 1fr 5fr 6fr;
+    }
     nav {
         top: 5px;
         background-color: #FFF;
@@ -737,13 +750,23 @@ nav a, nav span {
         width: 140px;
         height: 141px;
     }
+    nav li:last-child a {
+        margin-left: 59px;
+        margin-top: 86px;
+    }
+    nav li:last-child span {
+        margin-top: 51px;
+        margin-left: 26px;
+    }
+    nav li:last-child svg {
+        margin-top: 13px;
+        margin-right: -5px;
+    }
     #search_bar {
         order: -2;
         margin-left: 1px;
         margin-top: 34px;
     }
-    article img {
-        width: 40%;/*might leave this out and instead change size via layout*/
-    }
+    
 
 }
