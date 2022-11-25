@@ -615,8 +615,7 @@ nav a, nav span {
         margin-left: -2px;
         margin-right: 0;
         width: 100px;
-        height: 98px;new
-        z-index: 50;/*new*/
+        height: 98px;
     }
     /*Repositioning avatar and sign-in label, & adjusting hover style*/
     nav li:last-child svg {
@@ -647,9 +646,6 @@ nav a, nav span {
         background-color: rgba(235,84,40,.4);
         transition: all .5s ease-out;
     }
-    /* nav li:last-child svg:hover {
-        stroke: #FFF;
-    } */
     #search_bar {
         order: -60;
         margin-left: 250px;
@@ -877,7 +873,7 @@ nav a, nav span {
     footer small {
         margin-top: 23px;
         margin-left: -25px;
-      }
     }
+    
 
 }
