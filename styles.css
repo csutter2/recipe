@@ -162,9 +162,14 @@ footer small {
     margin-top: 5px;
 }
 #social {
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 50px;
     margin-bottom: 5px;
+}
+/*fixing order*/
+.medium_footer {
+    display: flex;
+    flex-flow: column;
 }
 #social li {
     font-size: 20px;
@@ -856,7 +861,7 @@ nav a, nav span {
         margin-top: 34px;
     }
     #social {
-        margin-left: -21px;
+        margin-left: -36px;
         justify-self: start;
         margin-top: 29px;
     }
@@ -867,6 +872,7 @@ nav a, nav span {
         flex-flow: row-reverse;
         align-items: flex-start;
         justify-content: flex-end;
+        padding-left: 7px;
     }
     footer small {
         margin-top: 23px;
