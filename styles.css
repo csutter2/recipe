@@ -68,8 +68,6 @@ html {
 }
 body {
     width: 414px;
-    /* min-width: 414px;
-    max-width: 80%; */
     margin: 0 auto;
     background-color: #F2F2F2;
     display: flex;
@@ -434,8 +432,8 @@ nav li:first-child svg {
     top: 0;
     margin-left: 69px;
     margin-right: 58px;
-    height: 83px;/*new*/
-    z-index: 50;/*new*/
+    height: 83px;
+    z-index: 50;
 }
 /*avatar svg*/
 nav li:last-child svg {
@@ -458,14 +456,13 @@ nav li:last-child a:hover {
     border-radius: 90px;
     transition: all .5s ease-out;
 }
-/*Reorganize all this code, as the below code is pasted from above*/
 nav {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     order: -2;
-    margin-bottom: 30px;/*original was 30px*/
-    padding-bottom: 0px;/*original was 20px*/
+    margin-bottom: 30px;
+    padding-bottom: 0px;
     box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, .25);
 }
 nav li {
@@ -515,10 +512,6 @@ nav a, nav span {
 #search_bar button svg {
     stroke: #FFF;
 }
-/*if you change ur mind and want to bold the placeholder, looks too thick to me right now*/
-/* #search_bar [placeholder] {
-    font-weight: bold;
-} */
 
 /*MEDIA QUERIES************************************************/
 @media screen and (min-width:768px) {
@@ -878,6 +871,4 @@ nav a, nav span {
         margin-top: 23px;
         margin-left: -25px;
     }
-    
-
 }
