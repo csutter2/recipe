@@ -200,9 +200,6 @@ footer h3, footer h2 {
 }
 
 /*ARTICLE: STREET TACOS*****************************************/
-/* #street_tacos {
-    background-color: #F2F2F2;
-} */
 menu {
     list-style-type: none;
     display: flex;
@@ -212,6 +209,9 @@ menu {
 }
 menu li {
     display: inline-block;
+}
+menu a {
+    text-decoration: none;
 }
 menu button {
     border: none;
@@ -265,6 +265,10 @@ menu button {
 /*SIDE DISHES SECTION**************************************************/
 #side_dishes {
     background-color: #7ABFBF;
+}
+#side_dishes a {
+    text-decoration: none;
+    color: #000;
 }
 #side_dishes section {
     height: 155px;
@@ -382,7 +386,7 @@ nav input:checked ~ label:not(.steps) span:before, nav input:checked ~ label:not
 /*putting space above BREAKFAST in nav bar and repositioning slightly*/
 nav li:nth-child(2) {
     margin-top: 2px;
-    margin-left: -88px;
+    margin-left: -90px;
 }
 /*making menu items vertically stacked*/
 nav a {
@@ -390,9 +394,9 @@ nav a {
     flex-direction: column;
     text-decoration: none;
     margin-bottom: 5px;
-    margin-left: 0;
+    margin-left: -2px;
     padding-left: 25px;
-    padding-right: 58px;
+    padding-right: 62px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
