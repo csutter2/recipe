@@ -131,7 +131,7 @@ figcaption {
     font-size: 20px;
     font-family: 'Bebas Neue', cursive;
     margin-left: 10px;
-    text-transform: initial;/*should be initial but style isn't taking; fix*/
+    text-transform: initial;
 }
 .hidden {
     display: none;
@@ -237,10 +237,8 @@ menu button {
 #street_tacos p:first-of-type {
     margin-top: 10px;
 }
-.clearfix {
-    content: “”;
-	display: table;
-	clear: both;
+.medium_screen ul {
+    overflow: hidden;
 }
 #street_tacos ul {
     list-style-type: square;
@@ -836,6 +834,9 @@ nav a, nav span {
         padding: 36px;
         width: 140px;
         height: 141px;
+    }
+    nav li:nth-child(2) {
+        margin-left: -66px;
     }
     nav li:last-child a {
         margin-left: 59px;
